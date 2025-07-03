@@ -17,10 +17,43 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-#main {
+nav {
   max-width: 980px;
   margin: 0 auto;
-  padding: 1rem;
+}
+
+nav > ul {
+  padding: 0 1rem;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+nav > ul > li {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.1rem;
+}
+
+#nav-name {
+  flex: 1;
+}
+
+.content {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#intro {
+  padding: 9rem 1rem;
 }
 
 #text-photo-wrapper {
@@ -29,11 +62,15 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap-reverse;
-  column-gap: 5rem;
+  column-gap: 10rem;
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-size: 1.1rem;
 }
 
 #tagline {
