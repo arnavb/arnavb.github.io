@@ -18,23 +18,26 @@ body {
 }
 
 #main {
-  max-width: 1024px;
-  padding-top: 2vh;
+  max-width: 980px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
-#name-photo {
+#text-photo-wrapper {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  column-gap: 5rem;
 }
 
 h1 {
-  font-size: 5rem;
-  flex: 1;
+  font-size: 3.5rem;
 }
 
-h3 {
-  font-size: 1.5rem;
+#tagline {
+  flex: 1 1 400px;
 }
 
 img {
